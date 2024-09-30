@@ -13,14 +13,13 @@
       margin: 0;
       padding: 0;
       background-color: hsl(0, 0%, 100%);
-      height: 100vh;
     }
 
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
+      min-height: 100%;
       padding: 10% 24.5%;
     }
 
