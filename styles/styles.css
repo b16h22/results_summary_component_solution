@@ -1,0 +1,244 @@
+
+    * {
+      font-family: Hanken Grotesk;
+      font-size: 18px;
+    }
+
+    :root {
+      --regularfontsize: 1rem;
+      --titlefontsize: 1.2rem;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: hsl(0, 0%, 100%);
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 15% 24.5%;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      max-height: 100%;
+      border-radius: 32px;
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 8px 32px 32px hsla(234, 85%, 45%, 0.1);
+    }
+
+    .result {
+      flex: 1;
+      padding: 40px;
+      border-radius: 32px;
+      color:hsl(0, 0%, 100%);
+      text-align: center;
+      background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+    .summary {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .title-result {
+      opacity: 0.7;
+      font-size: var(--titlefontsize);
+      font-weight: 700;
+      margin-top: 0;
+    }
+
+    .title-summary {
+      color: hsl(224, 30%, 27%);
+      font-size: var(--titlefontsize);
+      font-weight: 700;
+      margin-top: 0;
+    }
+
+    .score-section {
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 192px;
+      height: 188px;
+      margin: 12% auto;
+      background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    }
+
+    .score {
+      font-size: 4rem;
+      margin: 0;
+    }
+
+    .outof {
+      margin: 0;
+      font-size: var(--regularfontsize);
+      opacity: 0.4;
+      font-weight: 700;
+    }
+
+    .impression {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin: 0;
+      margin: 12% 0 0 0;
+    }
+
+    .remarks {
+      color:hsl(0, 0%, 100%);
+      font-size: var(--regularfontsize);
+      opacity: 0.7;
+      font-weight: 500;
+      margin: 3%;
+    }
+
+    .scorelist {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10%;
+    }
+
+    .list {
+      display: inline-block;
+      border-radius: 8px;
+      padding: 0.8rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .one {
+      background-color: hsla(0, 100%, 67%, 0.07);
+    }
+
+    .two {
+      background-color: hsla(39, 100%, 56%, 0.07);
+    }
+
+    .three {
+      background-color: hsla(166, 100%, 37%, 0.07);
+    }
+
+    .four {
+      background-color: hsla(234, 85%, 45%, 0.07);
+    }
+
+    .icon {
+      vertical-align: middle;
+      display: inline-block;
+      height: var(--regularfontsize);
+      width: var(--regularfontsize);
+    }
+
+    .entry {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: var(--regularfontsize);
+      font-weight: 700;
+      margin: 0 0 0 0.5rem;
+    }
+
+    .reaction {
+      color: hsl(0, 100%, 67%);
+    }
+
+    .memory {
+      color: hsl(39, 100%, 56%);
+    }
+
+    .verbal {
+      color: hsl(166, 100%, 37%);
+    }
+
+    .visual {
+      color: hsl(234, 85%, 45%);
+    }
+
+    .marks {
+      float: right;
+      vertical-align: middle;
+      color: hsla(224, 30%, 27%, 0.5);
+      font-size: var(--regularfontsize);
+      font-weight: 700;
+      margin: 0;
+    }
+
+    span {
+      color: hsl(224, 30%, 27%);
+      font-size: var(--regularfontsize);
+      font-weight: 700;
+    }
+
+    .continue {
+      width: 100%;
+      text-align: center;
+      font-size: var(--regularfontsize);
+      font-weight: 500;
+      padding: 1rem;
+      color: hsl(0, 0%, 100%);
+      border-radius: 2rem;
+      border: none;
+      background-color:hsl(224, 30%, 27%);
+    }
+
+    .continue:hover {
+      background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      cursor: pointer;
+    }
+
+    @media screen and (max-width:768px) {
+
+      :root {
+        --regularfontsize: 1.2rem;
+        --titlefontsize: 1.4rem;
+      }
+
+      body {
+        height: 100%;
+      }
+
+      .container {
+        padding: 0;
+      }
+
+      .card {
+        flex-direction: column;
+        border-radius: 0;
+      }
+
+      .result {
+        flex: 1;
+        border-radius: 0 0 40px 40px;
+      }
+  
+      .summary {
+        flex: 1;
+      }
+
+      .score-section {
+        margin: 5% auto;
+      }
+  
+      .scorelist {
+        padding-bottom: 4%;
+      }
+
+      .impression {
+        margin: 6% 0 0 0;
+      }
+
+      .list {
+        border-radius: 12px;
+        padding: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+
+    }
